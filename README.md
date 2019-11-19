@@ -1,9 +1,11 @@
-    Technologies: 
+## Screenshot As a Service API
+
+## Technologies: 
         •	Nodejs
         •	Express.js
         •	Dockers Containers
         •	RabitMQ Messaging & Queuing, Producer and Consumer based architecture.
-Working:
+## Working:
 
 This Service uses RabitMQ to queue all the post requests and then there are 2 agents that work with this queue to complete the screenshot process
 1.	Producer (web-Service.js) : Receives the requests and pushes it to the queue while lets user know about the request id so that they can query the data in future
@@ -11,12 +13,12 @@ This Service uses RabitMQ to queue all the post requests and then there are 2 ag
 2.	Consumer (Process-Service): takes each request from the queue and takes screenshot, saves it, updates the database and then acknowledges the Producer.
 
 
-Pre-Requisites:
+## Pre-Requisites:
 
-•	Docker Engine must be installed on the computer.
-•	Node V. 10.16.0
+- Docker Engine must be installed on the computer.
+- Node V. 10.16.0
 
-Installation Steps:
+## Installation Steps:
 
     •	Run Run_Dockers.bat  -----  (Runs Dockers images of MySQL, RabitMQ  & set up SQL DB)
     •	Run Run_Producer.bat ----  ( Runs the Producer Services which listen to requests)
