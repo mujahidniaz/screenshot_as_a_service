@@ -10,7 +10,7 @@
     "webshot": "^0.18.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "description": "## Setup After Provisioning RabbitMQ, run ```` npm install node rabbit_mq_setup.js cd web-service node web-service.js // in a different terminal cd processor-service  node processor-service.js ````",
   "version": "1.0.0",
